@@ -5,12 +5,14 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* genral components */
@@ -42,10 +44,10 @@ body {
 .gird-4--cols {
   grid-template-columns: repeat(4, 1fr);
 }
-
+/* 
 .gird-5--cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 
 .gird-center-v {
   align-items: center;
@@ -112,6 +114,21 @@ body {
   padding: 1.2rem;
 }
 
+/* mobile */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 .btn--form:hover {
   background-color: #fff;
   color: #555;
@@ -162,6 +179,7 @@ strong .btn--outline:link,
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .logo {
   height: 2.2rem;
@@ -173,7 +191,7 @@ strong .btn--outline:link,
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -200,7 +218,9 @@ strong .btn--outline:link,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+
 /* hero section */
+
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -452,6 +472,7 @@ strong .btn--outline:link,
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
@@ -767,3 +788,15 @@ strong .btn--outline:link,
 .footer-link:active {
   color: #555;
 }
+
+/* media quries make website responsiv */
+/* 
+Common screen sizes
+Mobile: 360 x 640
+Mobile: 375 x 667
+Mobile: 360 x 720
+iPhone X: 375 x 812
+Pixel 2: 411 x 731
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+High-res laptop or desktop: 1920 x 1080 */
