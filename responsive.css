@@ -117,10 +117,12 @@ High-res laptop or desktop: 1920 x 1080 */
 
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     right: 0;
